@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Node.js zadatak</title>
+</head>
+<body>
+    <div class = "main-nav">
+        <ul>
+            <li><a href="../polaganja/polaganja.html">Polaganja</a></li>
+            <li><a href="../ispiti/ispiti.html">Ispiti</a></li>
+            <li><a href="studenti.html">Studenti</a></li>
+        </ul>
+    </div>
+    <main>
+        <label>Ime i prezime:</label>
+        <input type="text" id="imePrezime-input">
+        <br>
+        <br>
+        <label>Broj indeksa:</label>
+        <input type="text" id="brInd-input">
+        <br>
+        <br>
+        <label>Studijski program:</label>
+        <select id="stdProgram-input">
+            <option value="isit">Informacioni sistemi i tehnologije</option>
+            <option value="menadzment">Menadzment i organizacija</option>
+        </select>
+        <br>
+        <br>
+        <button id="add-student-btn">Sačuvaj studenta</button>
+
+        <table id="studenti">
+            <thead>
+                <th>Broj indeksa</th>
+                <th>Ime i prezime</th>
+                <th>Studijski program</th>
+                <th>Izmeni</th>
+                <th>Obriši</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

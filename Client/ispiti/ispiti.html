@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Node.js zadatak</title>
+</head>
+<body>
+    <div class = "main-nav">
+        <ul>
+            <li><a href="../polaganja/polaganja.html">Polaganja</a></li>
+            <li><a href="ispiti.html">Ispiti</a></li>
+            <li><a href="../studenti/studenti.html">Studenti</a></li>
+        </ul>
+    </div>
+    <main>
+        <label>Student:</label>
+        <!-- <input type="text" id="brInd-input"> -->
+        <select id="brInd-input"></select>
+        <br>
+        <br>
+        <label>Predmet:</label>
+        <select id="predmet-input"></select>
+        <br>
+        <br>
+        <label>Ocena:</label>
+        <input type="number" id="ocena-input" min="5" max="10">
+        <br>
+        <br>
+        <button id="add-ispit-btn">Sačuvaj ispit</button>
+
+        <table id="ispiti">
+            <thead>
+                <th>Student</th>
+                <th>Predmet</th>
+                <th>Ocena</th>
+                <th>Izmeni</th>
+                <th>Obriši</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
